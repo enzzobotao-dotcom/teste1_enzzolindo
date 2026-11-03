@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#1f6f35,#2ea043);
+
+    overflow:hidden;
+
+}
+
+/* Card */
+
+.login-box{
+
+    width:95%;
+    max-width:520px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    animation:aparecer .7s;
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#2ea043;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    text-align:center;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:#666;
+
+    text-align:center;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+}
+
+hr{
+
+    border:none;
+
+    height:2px;
+
+    background:#2ea043;
+
+    margin:25px 0;
+
+}
+
+/* Form */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+}
+
+input[type=text],
+input[type=password]{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+
+    border-color:#2ea043;
+
+    box-shadow:0 0 10px rgba(46,160,67,.25);
+
+}
+
+/* Botões */
+
+.botoes{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:10px;
+
+}
+
+input[type=submit],
+input[type=reset]{
+
+    flex:1;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+input[type=submit]{
+
+    background:#2ea043;
+
+    color:white;
+
+}
+
+input[type=submit]:hover{
+
+    background:#237a3b;
+
+    transform:translateY(-3px);
+
+}
+
+input[type=reset]{
+
+    background:#ececec;
+
+}
+
+input[type=reset]:hover{
+
+    background:#dcdcdc;
+
+    transform:translateY(-3px);
+
+}
+
+/* Links */
+
+.link{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#2ea043;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.link:hover{
+
+    text-decoration:underline;
+
+}
+
+.inicio{
+
+    display:block;
+
+    margin-top:20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    background:#d81b1b;
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.inicio:hover{
+
+    background:#b91515;
+
+    transform:translateY(-3px);
+
+}
+
+/* Animação */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Responsivo */
+
+@media(max-width:600px){
+
+.login-box{
+
+    padding:30px 20px;
+
+}
+
+h1{
+
+    font-size:34px;
+
+}
+
+.botoes{
+
+    flex-direction:column;
+
+}
+
+}
